@@ -1,13 +1,13 @@
-import { Provider } from 'next-auth/client'
-import '../styles.css'
+import React from 'react';
+import Layout from '../components/Layout';
+import '../styles.css';
 
-const App = ({ Component, pageProps }) => {
-  const { session } = pageProps
+const App = ({ Component }) => {
   return (
-    <Provider session={session}>
-      <Component {...pageProps} />
-    </Provider>
-  )
-}
+    <Layout>
+      <Component />
+    </Layout>
+  );
+};
 
-export default App
+export default App;

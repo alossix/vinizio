@@ -1,8 +1,11 @@
 import React from 'react';
-import Main from '../components/Main/Main';
 
 const index = () => {
-  return <Main />;
+  return (
+    <div>
+      <h2>Pricing</h2>
+    </div>
+  );
 };
 
 export default index;
