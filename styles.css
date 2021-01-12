@@ -107,3 +107,9 @@ footer ul {
 .region-title {
   text-transform: capitalize;
 }
+.regions > div > div {
+  display: flex;
+}
+.region-icon {
+  height: 200px;
+}
