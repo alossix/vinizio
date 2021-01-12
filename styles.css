@@ -34,13 +34,13 @@ button {
 }
 .nav-top {
   grid-area: nav;
-  border-bottom: 1px solid lightgray;
+  border-bottom: 1px solid rgb(222, 222, 222);
 }
 .nav-top ul {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 0.5rem 1.5rem;
+  padding: 0rem 1.5rem;
   flex-wrap: wrap;
 }
 .nav-top a {
@@ -103,4 +103,7 @@ footer {
 footer ul {
   display: flex;
   justify-content: space-between;
+}
+.region-title {
+  text-transform: capitalize;
 }
