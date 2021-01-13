@@ -2,7 +2,7 @@ import React from 'react';
 
 const ValledAosta = () => {
   return (
-    <div className="valle-daosta-page">
+    <div id="valledaosta" className="region-page">
       <div className="region-title-icon">
         <h2 className="region-title">Valle d'Aosta</h2>
         <img

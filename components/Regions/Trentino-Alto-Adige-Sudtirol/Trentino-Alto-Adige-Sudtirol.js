@@ -2,7 +2,7 @@ import React from 'react';
 
 const TrentinoAltoAdigeSudtirol = () => {
   return (
-    <div className="trentino-alto-adige-sudtirol-page">
+    <div id="trentinoaltoadigesudtirol" className="region-page">
       <div className="region-title-icon">
         <h2 className="region-title">Trentino-Alto Adige/Südtirol</h2>
         <img

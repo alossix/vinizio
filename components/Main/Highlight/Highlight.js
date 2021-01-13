@@ -4,7 +4,6 @@ import Puglia from './Regions/Puglia';
 import Veneto from './Regions/Veneto';
 
 const Highlight = (props) => {
-  console.log(props.upcoming);
   const { upcoming } = props;
   const HighlightComponents = {
     // Abruzzo: <Abruzzo />,
