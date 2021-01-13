@@ -155,5 +155,5 @@ footer ul {
 .highlight-card-container,
 .highlight-card-link {
   font-size: 0.9rem;
-  padding-left: 1rem;
+  padding: 0.5rem 0.5rem 1rem 1rem;
 }
