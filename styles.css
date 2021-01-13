@@ -10,7 +10,15 @@ html {
 body {
   overflow: hidden;
 }
-h1 {
+h1,
+h2,
+h3 {
+  text-align: center;
+  padding: 2rem;
+}
+h4 {
+  font-family: 'Patua One', cursive;
+  font-size: 1.1rem;
   text-align: center;
 }
 a {
@@ -112,4 +120,34 @@ footer ul {
 }
 .region-icon {
   height: 200px;
+}
+.highlight-title {
+  text-align: center;
+}
+.highlight-upcoming {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.highlight-card {
+  max-width: 250px;
+  border: 2px solid black;
+  border-radius: 15px;
+  margin: 0rem 1rem;
+  padding: 0 0 1rem 0;
+  transition: transform 0.2s;
+}
+.highlight-card:hover {
+  transform: scale(1.1);
+}
+.highlight-card li {
+  margin-left: 2rem;
+}
+.highlight-card h4 {
+  padding-left: 1rem;
+}
+.highlight-card-container,
+.highlight-card-link {
+  font-size: 0.9rem;
+  padding-left: 1rem;
 }
