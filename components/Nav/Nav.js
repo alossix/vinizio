@@ -22,15 +22,13 @@ const Nav = () => {
       </Head>
       <nav className="nav-top">
         <ul>
-          <div className="logo">
+          <div className="logo-group">
             <Link href="/">
               <a>
                 <img src="/viniziologo.svg" alt="Vinizio Logo"></img>
               </a>
             </Link>
-            <Link href="/" id="logo">
-              Vinizio
-            </Link>
+            <Link href="/">Vinizio</Link>
           </div>
           <Link href="/how-it-works">How It Works</Link>
           <Link href="/pricing">Pricing</Link>

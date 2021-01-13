@@ -2,7 +2,7 @@ import React from 'react';
 
 const Lazio = () => {
   return (
-    <div className="lazio-page">
+    <div id="lazio" className="region-page">
       <div className="region-title-icon">
         <h2 className="region-title">Lazio</h2>
         <img

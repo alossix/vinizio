@@ -2,7 +2,7 @@ import React from 'react';
 
 const Marche = () => {
   return (
-    <div className="marche-page">
+    <div id="marche" className="region-page">
       <div className="region-title-icon">
         <h2 className="region-title">Marche</h2>
         <img

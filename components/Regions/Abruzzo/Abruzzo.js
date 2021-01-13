@@ -2,7 +2,7 @@ import React from 'react';
 
 const Abruzzo = () => {
   return (
-    <div className="region-page">
+    <div id="abruzzo" className="region-page">
       <div className="region-title-icon">
         <h2 className="region-title">Abruzzo</h2>
         <img

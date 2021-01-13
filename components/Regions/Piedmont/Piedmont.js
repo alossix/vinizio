@@ -2,7 +2,7 @@ import React from 'react';
 
 const Piedmont = () => {
   return (
-    <div className="piedmont-page">
+    <div id="piedmont" className="region-page">
       <div className="region-title-icon">
         <h2 className="region-title">Piedmont</h2>
         <img

@@ -2,7 +2,7 @@ import React from 'react';
 
 const Umbria = () => {
   return (
-    <div className="umbria-page">
+    <div id="umbria" className="region-page">
       <div className="region-title-icon">
         <h2 className="region-title">Umbria</h2>
         <img

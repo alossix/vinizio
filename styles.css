@@ -11,10 +11,12 @@ body {
   overflow: hidden;
 }
 h1,
-h2,
 h3 {
   text-align: center;
   padding: 2rem;
+}
+h2 {
+  text-align: center;
 }
 h4 {
   font-family: 'Patua One', cursive;
@@ -23,6 +25,7 @@ h4 {
 }
 a {
   text-decoration: none;
+  padding: 0 1rem;
 }
 button {
   font-family: 'Raleway', sans-serif;
@@ -59,22 +62,23 @@ button {
 .nav-top a:hover {
   color: #6d0000;
 }
-.logo {
+.logo-group {
   font-family: 'Patua One', cursive;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.logo a {
+.logo-group a {
   font-size: 2.8rem;
   text-transform: capitalize;
   color: black;
+  padding: 0;
 }
-.logo a:hover {
+.logo-group a:hover {
   text-decoration: none;
   color: black;
 }
-.logo img {
+.logo-group img {
   height: 2.2rem;
   margin: 0.8rem 0.2rem 0rem 0.2rem;
 }
@@ -112,10 +116,8 @@ footer ul {
   display: flex;
   justify-content: space-between;
 }
-.region-title {
-  text-transform: capitalize;
-}
-.regions > div > div {
+.region-page {
+  margin: 5rem 0rem;
   display: flex;
 }
 .region-icon {
@@ -123,6 +125,7 @@ footer ul {
 }
 .highlight-title {
   text-align: center;
+  margin: 1rem 0;
 }
 .highlight-upcoming {
   display: flex;
@@ -133,12 +136,15 @@ footer ul {
   max-width: 250px;
   border: 2px solid black;
   border-radius: 15px;
-  margin: 0rem 1rem;
-  padding: 0 0 1rem 0;
+  margin: 1rem;
   transition: transform 0.2s;
+}
+.highlight-card-title {
+  padding: 1rem;
 }
 .highlight-card:hover {
   transform: scale(1.1);
+  cursor: pointer;
 }
 .highlight-card li {
   margin-left: 2rem;
@@ -149,5 +155,5 @@ footer ul {
 .highlight-card-container,
 .highlight-card-link {
   font-size: 0.9rem;
-  padding-left: 1rem;
+  padding: 0.5rem 0.5rem 1rem 1rem;
 }

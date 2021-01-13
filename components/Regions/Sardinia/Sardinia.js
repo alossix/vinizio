@@ -2,7 +2,7 @@ import React from 'react';
 
 const Sardinia = () => {
   return (
-    <div className="sardinia-page">
+    <div id="sardinia" className="region-page">
       <div className="region-title-icon">
         <h2 className="region-title">Sardinia</h2>
         <img

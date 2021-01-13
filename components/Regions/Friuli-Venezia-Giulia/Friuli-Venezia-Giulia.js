@@ -2,7 +2,7 @@ import React from 'react';
 
 const FriuliVeneziaGiulia = () => {
   return (
-    <div className="friuli-venezia-giulia-page">
+    <div id="friuliveneziagiulia" className="region-page">
       <div className="region-title-icon">
         <h2 className="region-title">Friuli Venezia Giulia</h2>
         <img

@@ -2,7 +2,7 @@ import React from 'react';
 
 const Basilicata = () => {
   return (
-    <div className="basilicata-page">
+    <div id="basilicata" className="region-page">
       <div className="region-title-icon">
         <h2 className="region-title">Basilicata</h2>
         <img
