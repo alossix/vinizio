@@ -1,15 +1,22 @@
 import React from 'react';
+import Highlight from './Highlight/Highlight';
 
 const Main = () => {
+  const highlights = ['Piedmont', 'Puglia', 'Veneto'];
   return (
     <main>
       <section className="main-hero">
-        <h1>Vinizio: Start your Italian wine journey!</h1>
+        <h1>
+          Vinizio: A curated monthly Italian wine subscription box
+        </h1>
         <h2>
-          Receive four new wines each month - every month highlights a
-          different region of Italy. With your monthly subscription:
+          Start your Italian wine journey with us! Receive three new
+          wines each month, each delivery highlighting a different
+          region of Italy.
         </h2>
+        <h3>With your monthly subscription:</h3>
         <ul>
+          <li>Only small-batch vintners and traditional methods</li>
           <li>
             Discover the best hand-selected wines from independent
             producers
@@ -43,6 +50,7 @@ const Main = () => {
           alt="Icon of Italy"
         ></img>
       </section>
+      <Highlight upcoming={highlights} />
       <section className="signup-area">
         <button>Sign Up Now!</button>
       </section>
