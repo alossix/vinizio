@@ -1,15 +1,18 @@
 import React from 'react';
+import Image from 'next/image';
 
 const Calabria = () => {
   return (
     <div id="calabria" className="region-page">
       <div className="region-title-icon">
         <h2 className="region-title">Calabria</h2>
-        <img
-          className="region-icon"
+        <Image
           src="/regions/calabria.png"
-          alt="Calabria Wines"
-        ></img>
+          alt="Calabria Wine Region of Italy"
+          width={110}
+          height={200}
+          objectFit={'cover'}
+        />
       </div>
       <div className="region-description">
         <p>

@@ -1,15 +1,18 @@
 import React from 'react';
+import Image from 'next/image';
 
 const Basilicata = () => {
   return (
     <div id="basilicata" className="region-page">
       <div className="region-title-icon">
         <h2 className="region-title">Basilicata</h2>
-        <img
-          className="region-icon"
+        <Image
           src="/regions/basilicata.png"
-          alt="Basilicata Wines"
-        ></img>
+          alt="Basilicata Wine Region of Italy"
+          width={110}
+          height={200}
+          objectFit={'cover'}
+        />
       </div>
       <div className="region-description">
         <p>

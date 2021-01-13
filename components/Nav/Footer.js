@@ -7,7 +7,7 @@ const Footer = () => {
       <ul>
         <Link href="/about">About Vinizio</Link>
         <Link href="/regions">Wine Regions of Italy</Link>
-        <Link href="/vintners">Vintners</Link>
+        <Link href="/delivery-history">Past Deliveries</Link>
         <Link href="/contact">Customer Service / Contact</Link>
       </ul>
     </footer>

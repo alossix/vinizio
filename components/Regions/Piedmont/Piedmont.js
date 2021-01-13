@@ -1,15 +1,18 @@
 import React from 'react';
+import Image from 'next/image';
 
 const Piedmont = () => {
   return (
     <div id="piedmont" className="region-page">
       <div className="region-title-icon">
         <h2 className="region-title">Piedmont</h2>
-        <img
-          className="region-icon"
+        <Image
           src="/regions/piedmont.png"
-          alt="Piedmont Wines"
-        ></img>
+          alt="Piedmont Wine Region of Italy"
+          width={110}
+          height={200}
+          objectFit={'cover'}
+        />
       </div>
       <div className="region-description">
         <p>
