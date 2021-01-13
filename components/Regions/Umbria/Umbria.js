@@ -1,15 +1,18 @@
 import React from 'react';
+import Image from 'next/image';
 
 const Umbria = () => {
   return (
     <div id="umbria" className="region-page">
       <div className="region-title-icon">
         <h2 className="region-title">Umbria</h2>
-        <img
-          className="region-icon"
+        <Image
           src="/regions/umbria.png"
-          alt="Umbria Wines"
-        ></img>
+          alt="Umbria Wine Region of Italy"
+          width={110}
+          height={200}
+          objectFit={'cover'}
+        />
       </div>
       <div className="region-description">
         <p>

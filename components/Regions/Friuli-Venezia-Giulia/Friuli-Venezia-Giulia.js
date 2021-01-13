@@ -1,15 +1,18 @@
 import React from 'react';
+import Image from 'next/image';
 
 const FriuliVeneziaGiulia = () => {
   return (
     <div id="friuliveneziagiulia" className="region-page">
       <div className="region-title-icon">
         <h2 className="region-title">Friuli Venezia Giulia</h2>
-        <img
-          className="region-icon"
+        <Image
           src="/regions/friuliveneziagiulia.png"
-          alt="Friuli Venezia Giulia Wines"
-        ></img>
+          alt="Friuli Venezia Giulia Wine Region of Italy"
+          width={110}
+          height={200}
+          objectFit={'cover'}
+        />
       </div>
       <div className="region-description">
         <p>

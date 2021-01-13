@@ -1,15 +1,18 @@
 import React from 'react';
+import Image from 'next/image';
 
 const Marche = () => {
   return (
     <div id="marche" className="region-page">
       <div className="region-title-icon">
         <h2 className="region-title">Marche</h2>
-        <img
-          className="region-icon"
+        <Image
           src="/regions/marche.png"
-          alt="Marche Wines"
-        ></img>
+          alt="Marche Wine Region of Italy"
+          width={110}
+          height={200}
+          objectFit={'cover'}
+        />
       </div>
       <div className="region-description">
         <p>

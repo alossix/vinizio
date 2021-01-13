@@ -6,13 +6,10 @@ const Main = () => {
   return (
     <main>
       <section className="main-hero">
-        <h1>
-          Vinizio: A curated monthly Italian wine subscription box
-        </h1>
+        <h1>Vinizio: Start Your Italian Wine Journey</h1>
         <h2>
-          Start your Italian wine journey with us! Receive three new
-          wines each month, each delivery highlighting a different
-          region of Italy.
+          You'll receive three new wines each month, every delivery
+          highlighting a unique wine region of Italy.
         </h2>
         <h3>With your monthly subscription:</h3>
         <ul>

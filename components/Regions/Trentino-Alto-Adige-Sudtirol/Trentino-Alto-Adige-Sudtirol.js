@@ -1,15 +1,24 @@
 import React from 'react';
+import Image from 'next/image';
 
 const TrentinoAltoAdigeSudtirol = () => {
   return (
     <div id="trentinoaltoadigesudtirol" className="region-page">
       <div className="region-title-icon">
-        <h2 className="region-title">Trentino-Alto Adige/Südtirol</h2>
-        <img
-          className="region-icon"
+        <h2 className="region-title">
+          Trentino-
+          <br />
+          Alto Adige/
+          <br />
+          Südtirol
+        </h2>
+        <Image
           src="/regions/trentinoaltoadigesudtirol.png"
-          alt="Trentino-Alto Adige/Südtirol Wines"
-        ></img>
+          alt="Trentino-Alto Adige/Südtirol Wine Region of Italy"
+          width={110}
+          height={200}
+          objectFit={'cover'}
+        />
       </div>
       <div className="region-description">
         <p>
