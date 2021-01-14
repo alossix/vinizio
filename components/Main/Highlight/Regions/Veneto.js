@@ -20,9 +20,9 @@ const Veneto = () => {
               April highlights three new wines from the Veneto region:
             </p>
             <ul>
-              <li>Amarone della Valpolicella</li>
-              <li>Merlot</li>
-              <li>Soave</li>
+              <li>Red: Amarone della Valpolicella</li>
+              <li>Red: Merlot</li>
+              <li>White: Soave</li>
             </ul>
           </div>
         </div>

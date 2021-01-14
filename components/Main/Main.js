@@ -13,7 +13,11 @@ const Main = () => {
         </h2>
         <h3>With your monthly subscription:</h3>
         <ul>
-          <li>Only small-batch vintners and traditional methods</li>
+          <li>
+            Emphasis on small-batch vintners and traditional methods,
+            fantastic way to discover new varieties not commonly
+            available at your local supermarket.
+          </li>
           <li>
             Discover the best hand-selected wines from independent
             producers

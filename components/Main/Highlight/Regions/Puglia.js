@@ -20,9 +20,9 @@ const Puglia = () => {
               March highlights three new wines from the Puglia region:
             </p>
             <ul>
-              <li>Primitivo</li>
-              <li>Negroamaro</li>
-              <li>Trebbiano</li>
+              <li>Red: Primitivo</li>
+              <li>Red: Negroamaro</li>
+              <li>White: Trebbiano</li>
             </ul>
           </div>
         </div>

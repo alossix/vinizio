@@ -30,8 +30,7 @@ const Nav = () => {
             </Link>
             <Link href="/">Vinizio</Link>
           </div>
-          <Link href="/how-it-works">How It Works</Link>
-          <Link href="/pricing">Pricing</Link>
+          <Link href="/how-it-works">How It Works & Pricing</Link>
           <Link href="/gifts">Gift Boxes</Link>
           <div className="signup-login">
             <Link href="/login">Log In</Link>

@@ -18,14 +18,11 @@ const Piedmont = () => {
             objectFit={'cover'}
           />
           <div className="highlight-card-container">
-            <p>
-              February highlights three new wines from the Piedmont
-              region:
-            </p>
+            <p>February highlights from the Piedmont region:</p>
             <ul>
-              <li>Barolo</li>
-              <li>Barbera</li>
-              <li>Moscato d'Asti</li>
+              <li>Red: Barolo</li>
+              <li>Red: Barbera</li>
+              <li>White: Moscato d'Asti</li>
             </ul>
           </div>
         </div>
