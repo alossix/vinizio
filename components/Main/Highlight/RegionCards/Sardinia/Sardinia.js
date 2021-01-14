@@ -2,30 +2,28 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
-const Piedmont = () => {
+const Sardinia = () => {
   return (
-    <Link href="/regions#piedmont">
+    <Link href="/regions#sardinia">
       <div className="highlight-card">
-        <h4 className="highlight-card-title">
-          February '21: Piedmont
-        </h4>
+        <h4 className="highlight-card-title">Sardinia</h4>
         <div className="highlight-image">
           <Image
-            src="/highlights/piedmont.jpg"
-            alt="Piedmont Wine Region of Italy"
+            src="/highlights/sardinia.jpg"
+            alt="Sardinia Wine Region of Italy"
             width={250}
             height={250}
             objectFit={'cover'}
           />
           <div className="highlight-card-container">
             <p>
-              February highlights three new wines from the Piedmont
-              region:
+              This month we are highlighting three new wines from the
+              Sardinia region:
             </p>
             <ul>
-              <li>Barolo</li>
-              <li>Barbera</li>
-              <li>Moscato d'Asti</li>
+              <li>Red:</li>
+              <li>Red:</li>
+              <li>White:</li>
             </ul>
           </div>
         </div>
@@ -34,4 +32,4 @@ const Piedmont = () => {
   );
 };
 
-export default Piedmont;
+export default Sardinia;

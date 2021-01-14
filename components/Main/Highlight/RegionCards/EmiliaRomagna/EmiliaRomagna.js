@@ -2,27 +2,28 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
-const Veneto = () => {
+const EmiliaRomagna = () => {
   return (
-    <Link href="/regions#veneto">
+    <Link href="/regions#emiliaromagna">
       <div className="highlight-card">
-        <h4 className="highlight-card-title">April '21: Veneto</h4>
+        <h4 className="highlight-card-title">Emilia-Romagna</h4>
         <div className="highlight-image">
           <Image
-            src="/highlights/veneto.jpg"
-            alt="Veneto Wine Region of Italy"
+            src="/highlights/emiliaromagna.jpg"
+            alt="Emilia-Romagna Wine Region of Italy"
             width={250}
             height={250}
             objectFit={'cover'}
           />
           <div className="highlight-card-container">
             <p>
-              April highlights three new wines from the Veneto region:
+              This month we are highlighting three new wines from the
+              Emilia-Romagna region:
             </p>
             <ul>
-              <li>Amarone della Valpolicella</li>
-              <li>Merlot</li>
-              <li>Soave</li>
+              <li>Red:</li>
+              <li>Red:</li>
+              <li>White:</li>
             </ul>
           </div>
         </div>
@@ -31,4 +32,4 @@ const Veneto = () => {
   );
 };
 
-export default Veneto;
+export default EmiliaRomagna;

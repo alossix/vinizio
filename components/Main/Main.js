@@ -1,8 +1,8 @@
 import React from 'react';
+import Image from 'next/image';
 import Highlight from './Highlight/Highlight';
 
 const Main = () => {
-  const highlights = ['Piedmont', 'Puglia', 'Veneto'];
   return (
     <main>
       <section className="main-hero">
@@ -13,7 +13,11 @@ const Main = () => {
         </h2>
         <h3>With your monthly subscription:</h3>
         <ul>
-          <li>Only small-batch vintners and traditional methods</li>
+          <li>
+            Emphasis on small-batch vintners and traditional methods,
+            fantastic way to discover new varieties not commonly
+            available at your local supermarket.
+          </li>
           <li>
             Discover the best hand-selected wines from independent
             producers
@@ -41,16 +45,11 @@ const Main = () => {
           Like what you've tasted? Reorder your favorite bottles,
           while supplies last.
         </h3>
-        <img
-          className="italy-icon"
-          src="/italyicon.svg"
-          alt="Icon of Italy"
-        ></img>
       </section>
-      <Highlight upcoming={highlights} />
       <section className="signup-area">
         <button>Sign Up Now!</button>
       </section>
+      <Highlight />
     </main>
   );
 };

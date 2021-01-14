@@ -2,27 +2,28 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
-const Puglia = () => {
+const ValledAosta = () => {
   return (
-    <Link href="/regions#puglia">
+    <Link href="/regions#valledaosta">
       <div className="highlight-card">
-        <h4 className="highlight-card-title">March '21: Puglia</h4>
+        <h4 className="highlight-card-title">Valle d'Aosta</h4>
         <div className="highlight-image">
           <Image
-            src="/highlights/puglia.jpg"
-            alt="Puglia Wine Region of Italy"
+            src="/highlights/valledaosta.jpg"
+            alt="Valle d'Aosta Wine Region of Italy"
             width={250}
             height={250}
             objectFit={'cover'}
           />
           <div className="highlight-card-container">
             <p>
-              March highlights three new wines from the Puglia region:
+              This month we are highlighting three new wines from the
+              Valle d'Aosta region:
             </p>
             <ul>
-              <li>Primitivo</li>
-              <li>Negroamaro</li>
-              <li>Trebbiano</li>
+              <li>Red:</li>
+              <li>Red:</li>
+              <li>White:</li>
             </ul>
           </div>
         </div>
@@ -31,4 +32,4 @@ const Puglia = () => {
   );
 };
 
-export default Puglia;
+export default ValledAosta;

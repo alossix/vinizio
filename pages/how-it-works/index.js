@@ -2,8 +2,8 @@ import React from 'react';
 
 const index = () => {
   return (
-    <div>
-      <h2>How the Service Works</h2>
+    <div className="how-it-works-page">
+      <h2>How Does the Service Work?</h2>
     </div>
   );
 };
