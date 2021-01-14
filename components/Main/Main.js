@@ -1,8 +1,8 @@
 import React from 'react';
+import Image from 'next/image';
 import Highlight from './Highlight/Highlight';
 
 const Main = () => {
-  const highlights = ['Piedmont', 'Puglia', 'Veneto'];
   return (
     <main>
       <section className="main-hero">
@@ -45,16 +45,11 @@ const Main = () => {
           Like what you've tasted? Reorder your favorite bottles,
           while supplies last.
         </h3>
-        <img
-          className="italy-icon"
-          src="/italyicon.svg"
-          alt="Icon of Italy"
-        ></img>
       </section>
-      <Highlight upcoming={highlights} />
       <section className="signup-area">
         <button>Sign Up Now!</button>
       </section>
+      <Highlight />
     </main>
   );
 };

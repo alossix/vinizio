@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const FriuliVeneziaGiulia = () => {
   return (
-    <div id="friuliveneziagiulia" className="region-page">
+    <div id="fvg" className="region-page">
       <div className="region-title-icon">
         <h2 className="region-title">Friuli Venezia Giulia</h2>
         <Image
