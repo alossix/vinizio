@@ -115,13 +115,41 @@ main {
   flex-direction: column;
   justify-content: space-evenly;
 }
+.signup-area {
+  display: flex;
+  justify-content: center;
+}
+.signup-area button {
+  padding: 1rem 4rem;
+  margin: 3rem 0;
+  border-radius: 15px;
+  background-color: #6d0000;
+  color: white;
+  border: 3px solid #6d0000;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+.signup-area button:hover {
+  cursor: pointer;
+  background-color: white;
+  color: #6d0000;
+}
 footer {
   grid-area: footer;
-  background-color: lightblue;
+  background-color: #444444;
 }
 footer ul {
   display: flex;
   justify-content: space-between;
+  padding: 1rem;
+}
+footer a {
+  font-size: 0.8rem;
+  color: white;
+  text-transform: uppercase;
+}
+footer a:hover {
+  color: #dddddd;
 }
 .regions {
   width: 90vw;
