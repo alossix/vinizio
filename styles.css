@@ -15,8 +15,13 @@ h1 {
   font-weight: bolder;
   font-family: 'Raleway', sans-serif;
   text-align: center;
-  width: 80vw;
+  width: 60vw;
   margin: 5rem 0;
+}
+h2 {
+  padding: 4rem 0;
+  width: 80vw;
+  margin: auto;
 }
 h2,
 h3,
@@ -24,9 +29,6 @@ h4,
 h5 {
   font-family: 'Patua One', cursive;
   text-align: center;
-}
-h3 {
-  padding: 2rem;
 }
 h4 {
   font-size: 1.1rem;
@@ -127,10 +129,7 @@ main {
   justify-content: space-evenly;
 }
 .main-hero {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: calc(74vh);
+  height: calc(100vh - 4rem);
   background-image: linear-gradient(
       rgba(0, 0, 0, 0.3),
       rgba(0, 0, 0, 0.2)
@@ -142,8 +141,46 @@ main {
   color: #fff;
 }
 .main-hero-text {
-  width: 90vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80vw;
   margin: auto;
+}
+.main-description {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  padding-top: 4rem;
+  width: 80vw;
+}
+.main-description ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.main-description li {
+  margin-left: 3rem;
+  padding: 0.5rem 0;
+}
+.arrow-holder {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  width: 70px;
+  padding-top: 2rem;
+}
+.arrow-holder:hover {
+  cursor: pointer;
+}
+.arrow-image {
+  height: 10vh;
+  width: 10vw;
+  filter: invert(100);
+  z-index: 1;
+}
+.arrow-image:hover {
+  filter: invert(0.6);
 }
 .signup-area {
   display: flex;
@@ -203,8 +240,7 @@ footer a:hover {
   margin-bottom: 3rem;
 }
 .highlight-title {
-  text-align: center;
-  margin: 1rem 0;
+  margin: auto;
 }
 .highlight-upcoming {
   display: flex;
