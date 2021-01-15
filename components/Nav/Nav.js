@@ -11,13 +11,13 @@ const Nav = () => {
         <title>Vinizio: Start Your Italian Wine Journey</title>
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
-          href="https://fonts.googleapis.com/css2?family=Patua+One&family=Raleway&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Patua+One&family=Raleway:wght@400;800&display=swap"
           rel="stylesheet"
-        ></link>
+        />
         <link rel="shortcut icon" href="/favicon.ico" />
         <meta
           name="description"
-          content="Vinizio is a curated wine subscription box delivered each month to your doorstep. Delivery throughout the EU/EEA/Switzerland."
+          content="Vinizio is a hand-curated Italian wine subscription box delivered to your doorstep each month. Delivery throughout the EU/EEA."
         ></meta>
       </Head>
       <nav className="nav-top">

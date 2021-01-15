@@ -8,13 +8,16 @@ html {
   font-family: 'Raleway', sans-serif;
 }
 body {
-  overflow: hidden;
+  height: 100vh;
 }
 h1 {
   font-size: 2.8rem;
-  font-weight: 400;
+  font-weight: bolder;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  width: 80vw;
+  margin: 5rem 0;
 }
-h1,
 h2,
 h3,
 h4,
@@ -22,7 +25,6 @@ h5 {
   font-family: 'Patua One', cursive;
   text-align: center;
 }
-h1,
 h3 {
   padding: 2rem;
 }
@@ -33,12 +35,14 @@ a {
   text-decoration: none;
   padding: 0 1rem;
 }
+img {
+  z-index: -1;
+}
 button {
   font-family: 'Raleway', sans-serif;
   font-size: 1rem;
 }
 .app {
-  height: 100vh;
   width: 100vw;
   display: grid;
   grid-template-columns: 1fr;
@@ -47,11 +51,17 @@ button {
     'nav'
     'main'
     'footer';
-  overflow-y: scroll;
+  overflow: hidden;
+  padding-top: 4rem;
 }
 .nav-top {
   grid-area: nav;
+  height: 4rem;
+  width: 100vw;
   border-bottom: 1px solid rgb(222, 222, 222);
+  background-color: #fff;
+  position: fixed;
+  top: 0;
 }
 .nav-top ul {
   display: flex;
@@ -59,6 +69,7 @@ button {
   align-items: center;
   padding: 0rem 1.5rem;
   flex-wrap: wrap;
+  background-color: #fff;
 }
 .nav-top a {
   color: #444444;
@@ -115,13 +126,63 @@ main {
   flex-direction: column;
   justify-content: space-evenly;
 }
+.main-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: calc(74vh);
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url('/vineyard.jpg');
+  background-size: cover;
+  background-position-y: 10%;
+  background-blend-mode: darken;
+  color: #fff;
+}
+.main-hero-text {
+  width: 90vw;
+  margin: auto;
+}
+.signup-area {
+  display: flex;
+  justify-content: center;
+}
+.signup-area button {
+  padding: 1rem 4rem;
+  margin: 3rem 0;
+  border-radius: 15px;
+  background-color: #6d0000;
+  color: white;
+  border: 3px solid #6d0000;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+.signup-area button:hover {
+  cursor: pointer;
+  background-color: white;
+  color: #6d0000;
+}
 footer {
   grid-area: footer;
-  background-color: lightblue;
+  background-color: #444444;
+  position: static;
+  bottom: 0;
+  width: 100vw;
 }
 footer ul {
   display: flex;
   justify-content: space-between;
+  padding: 1rem;
+}
+footer a {
+  font-size: 0.8rem;
+  color: white;
+  text-transform: uppercase;
+}
+footer a:hover {
+  color: #dddddd;
 }
 .regions {
   width: 90vw;
@@ -137,6 +198,9 @@ footer ul {
 }
 .region-title {
   text-align: left;
+}
+.highlight-section {
+  margin-bottom: 3rem;
 }
 .highlight-title {
   text-align: center;
