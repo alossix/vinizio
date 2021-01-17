@@ -1,12 +1,16 @@
 import React from 'react';
+import { Provider } from 'next-auth/client';
 import Layout from '../components/Layout';
 import '../styles.css';
 
-const App = ({ Component }) => {
+const App = ({ Component, pageProps }) => {
+  const { session } = pageProps;
   return (
-    <Layout>
-      <Component />
-    </Layout>
+    <Provider session={session}>
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+    </Provider>
   );
 };
 
