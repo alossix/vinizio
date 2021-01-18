@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useSession } from 'next-auth/client';
+import { signin, useSession } from 'next-auth/client';
 import Link from 'next/link';
 
 const index = () => {
@@ -24,15 +24,15 @@ const index = () => {
     return (
       <main>
         <h2>
-          You aren't signed in. Please <Link href="/">sign in</Link>{' '}
-          first.
+          You aren't signed in. Please{' '}
+          <button onClick={signin}>sign in</button> first.
         </h2>
       </main>
     );
   }
   return (
-    <main>
-      <h2>Protected Page</h2>
+    <main className="user-profile-page">
+      <h2>User Profile Page</h2>
       <p>{content}</p>
     </main>
   );

@@ -5,11 +5,11 @@ export default async (req, res) => {
 
   if (session) {
     res.send({
-      content: 'Welcome to your user page!',
+      content: `Signed in as ${session.user.email}.`,
     });
   } else {
     res.send({
-      error: 'You need to log in.',
+      error: 'Please log in first.',
     });
   }
 };
