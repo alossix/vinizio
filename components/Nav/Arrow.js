@@ -5,7 +5,6 @@ const Arrow = () => {
   const [arrowVisible, setArrowVisible] = useState(false);
 
   const clickHandler = () => {
-    console.log(`inside clickhandler: ${arrowVisible}`);
     setArrowVisible(true);
   };
 
