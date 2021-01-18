@@ -6,7 +6,7 @@ const Nav = () => {
   const [session, loading] = useSession();
 
   return (
-    <div>
+    <div className="nav-area">
       <Head>
         <title>Vinizio: Start Your Italian Wine Journey</title>
         <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -34,13 +34,30 @@ const Nav = () => {
           <Link href="/gifts">Gift Boxes</Link>
           {!session && (
             <div className="signup-login">
-              <button onClick={signin}>Log In</button>
-              <button className="signup-button">Sign Up</button>
+              <button
+                onClick={signin}
+                className="account-login-button"
+              >
+                Log In
+              </button>
+              <button className="signup-logout-button">
+                Sign Up
+              </button>
             </div>
           )}
           {session && (
             <div className="signup-login">
-              <button onClick={signout}>Log Out</button>
+              <Link href="/user">
+                <button className="account-login-button">
+                  My Account
+                </button>
+              </Link>
+              <button
+                onClick={signout}
+                className="signup-logout-button"
+              >
+                Log Out
+              </button>
             </div>
           )}
         </ul>

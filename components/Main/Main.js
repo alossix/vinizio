@@ -1,7 +1,7 @@
 import React from 'react';
 import Hero from './Hero/Hero';
 import Description from './Description/Description';
-import Signup from './Signup/Signup';
+import SignupArea from './SignupArea/SignupArea';
 import Highlight from './Highlight/Highlight';
 
 const Main = () => {
@@ -9,7 +9,7 @@ const Main = () => {
     <main>
       <Hero />
       <Description />
-      <Signup />
+      <SignupArea />
       <Highlight />
     </main>
   );

@@ -18,11 +18,6 @@ h1 {
   width: 60vw;
   margin: 5rem 0;
 }
-h2 {
-  padding: 4rem 0;
-  width: 80vw;
-  margin: auto;
-}
 h2,
 h3,
 h4,
@@ -107,7 +102,19 @@ button {
   justify-content: space-between;
   align-items: center;
 }
-.signup-button {
+.account-login-button {
+  padding: 0.5rem 2rem;
+  border-radius: 15px;
+  border: 3px solid #6d0000;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  background-color: white;
+  color: #6d0000;
+}
+.account-login-button:hover {
+  cursor: pointer;
+}
+.signup-logout-button {
   padding: 0.5rem 2rem;
   margin: 0rem 1rem 0rem 2rem;
   background-color: #6d0000;
@@ -117,7 +124,7 @@ button {
   font-size: 0.8rem;
   text-transform: uppercase;
 }
-.signup-button:hover {
+.signup-logout-button:hover {
   cursor: pointer;
   background-color: white;
   color: #6d0000;
@@ -127,6 +134,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  min-height: calc(100vh - 8rem);
 }
 .main-hero {
   height: calc(100vh - 4rem);
@@ -139,11 +147,14 @@ main {
   background-position-y: 10%;
   background-blend-mode: darken;
   color: #fff;
+  width: 100vw;
 }
 .main-hero-text {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-evenly;
+  height: 100%;
   width: 80vw;
   margin: auto;
 }
@@ -174,8 +185,7 @@ main {
   cursor: pointer;
 }
 .arrow-image {
-  height: 10vh;
-  width: 10vw;
+  height: 13vh;
   filter: invert(100);
   z-index: 1;
 }
@@ -184,7 +194,13 @@ main {
 }
 .signup-area {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
+}
+.signup-area h2 {
+  padding: 4rem 0;
+  max-width: 60vw;
 }
 .signup-area button {
   padding: 1rem 4rem;
@@ -211,7 +227,9 @@ footer {
 footer ul {
   display: flex;
   justify-content: space-between;
-  padding: 1rem;
+  align-items: center;
+  height: 4rem;
+  padding: 0 1rem;
 }
 footer a {
   font-size: 0.8rem;
@@ -230,11 +248,10 @@ footer a:hover {
   display: flex;
 }
 .region-title-icon {
+  display: flex;
+  flex-direction: column;
   min-width: 150px;
   padding-right: 1rem;
-}
-.region-title {
-  text-align: left;
 }
 .highlight-section {
   margin-bottom: 3rem;
