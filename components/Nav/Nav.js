@@ -32,60 +32,62 @@ const Nav = () => {
           </div>
           <Link href="/how-it-works">How It Works & Pricing</Link>
           <Link href="/gifts">Gift Boxes</Link>
-          <div className="signup-login">
-            <Link href="/login">Log In</Link>
-            <Link href="/signup">
+          {!session && (
+            <div className="signup-login">
+              <button onClick={signin}>Log In</button>
               <button className="signup-button">Sign Up</button>
-            </Link>
-          </div>
+            </div>
+          )}
+          {session && (
+            <div className="signup-login">
+              <button onClick={signout}>Log Out</button>
+            </div>
+          )}
         </ul>
-        {/* <noscript>
-        <style>{`.nojs-show { opacity: 1; top: 0; }`}</style>
-      </noscript>
-      <p
-        className={`nojs-show ${
-          !session && loading ? styles.loading : styles.loaded
-        }`}
-      >
-        {!session && (
-          <>
-            <span className={styles.notSignedIn}>Not signed in</span>
-            <a
-              href={`/api/auth/signin`}
-              onClick={(e) => {
-                e.preventDefault();
-                signin();
-              }}
-            >
-              <button className={styles.signinButton}>Sign in</button>
-            </a>
-          </>
-        )}
-        {session && (
-          <>
-            <span
-              style={{
-                backgroundImage: `url(${session.user.image})`,
-              }}
-              className={styles.avatar}
-            />
-            <span className={styles.signedIn}>
-              Signed in as <strong>{session.user.email}</strong>
-            </span>
-            <a
-              href={`/api/auth/signout`}
-              onClick={(e) => {
-                e.preventDefault();
-                signout();
-              }}
-            >
-              <button className={styles.signoutButton}>
-                Sign out
-              </button>
-            </a>
-          </>
-        )}
-      </p> */}
+
+        {/* {!session && (
+            <>
+              <span className={styles.notSignedIn}>
+                Not signed in
+              </span>
+              <a
+                href={`/api/auth/signin`}
+                onClick={(e) => {
+                  e.preventDefault();
+                  signin();
+                }}
+              >
+                <button className={styles.signinButton}>
+                  Sign in
+                </button>
+              </a>
+            </>
+          )}
+          {session && (
+            <>
+              <span
+                style={{
+                  backgroundImage: `url(${session.user.image})`,
+                }}
+                className={styles.avatar}
+              />
+              <span className={styles.signedIn}>
+                Signed in as <strong>{session.user.email}</strong>
+              </span>
+              <a
+                href={`/api/auth/signout`}
+                onClick={(e) => {
+                  e.preventDefault();
+                  signout();
+                }}
+              >
+                <button className={styles.signoutButton}>
+                  Sign out
+                </button>
+              </a>
+            </>
+          )} */}
+        {/* </p> */}
       </nav>
     </div>
   );
