@@ -40,7 +40,10 @@ const Nav = () => {
               >
                 Log In
               </button>
-              <button className="signup-logout-button">
+              <button
+                onClick={signin}
+                className="signup-logout-button"
+              >
                 Sign Up
               </button>
             </div>
@@ -61,50 +64,6 @@ const Nav = () => {
             </div>
           )}
         </ul>
-
-        {/* {!session && (
-            <>
-              <span className={styles.notSignedIn}>
-                Not signed in
-              </span>
-              <a
-                href={`/api/auth/signin`}
-                onClick={(e) => {
-                  e.preventDefault();
-                  signin();
-                }}
-              >
-                <button className={styles.signinButton}>
-                  Sign in
-                </button>
-              </a>
-            </>
-          )}
-          {session && (
-            <>
-              <span
-                style={{
-                  backgroundImage: `url(${session.user.image})`,
-                }}
-                className={styles.avatar}
-              />
-              <span className={styles.signedIn}>
-                Signed in as <strong>{session.user.email}</strong>
-              </span>
-              <a
-                href={`/api/auth/signout`}
-                onClick={(e) => {
-                  e.preventDefault();
-                  signout();
-                }}
-              >
-                <button className={styles.signoutButton}>
-                  Sign out
-                </button>
-              </a>
-            </>
-          )} */}
-        {/* </p> */}
       </nav>
     </div>
   );

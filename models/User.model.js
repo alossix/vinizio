@@ -18,11 +18,11 @@ const userSchema = new mongoose.Schema({
   telephone: {
     type: String,
   },
+  country: {
+    type: String,
+    required: true,
+  },
   address: {
-    country: {
-      type: String,
-      required: true,
-    },
     city: {
       type: String,
       required: true,

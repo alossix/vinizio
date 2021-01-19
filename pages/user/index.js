@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { signin, useSession } from 'next-auth/client';
-import Link from 'next/link';
 
 const index = () => {
   const [session, loading] = useSession();
@@ -22,7 +21,7 @@ const index = () => {
 
   if (!session) {
     return (
-      <main>
+      <main className="user-profile-page">
         <h2>
           You aren't signed in. Please{' '}
           <button onClick={signin}>sign in</button> first.
