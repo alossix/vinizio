@@ -136,6 +136,9 @@ const Nav = () => {
           .account-login-button:hover {
             cursor: pointer;
           }
+          .account-login-button a {
+            color: #6d0000;
+          }
           .signup-logout-button {
             padding: 0.5rem 2rem;
             margin: 0rem 1rem 0rem 2rem;
