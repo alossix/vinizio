@@ -21,6 +21,35 @@ const Signup = () => {
           while supplies last.
         </h3>
       </section>
+      <style jsx>
+        {`
+          .signup-area {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+          }
+          .signup-area h2 {
+            margin: 4rem 0 0 0;
+            max-width: 60vw;
+          }
+          .signup-area button {
+            padding: 1rem 4rem;
+            margin: 3rem 0;
+            border-radius: 15px;
+            background-color: #6d0000;
+            color: white;
+            border: 3px solid #6d0000;
+            font-size: 1.5rem;
+            text-transform: uppercase;
+          }
+          .signup-area button:hover {
+            cursor: pointer;
+            background-color: white;
+            color: #6d0000;
+          }
+        `}
+      </style>
     </section>
   );
 };

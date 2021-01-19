@@ -29,6 +29,26 @@ const Description = () => {
           <li>No-hassle cancellation at any time</li>
         </ul>
       </div>
+      <style jsx>
+        {`
+          .main-description {
+            display: flex;
+            justify-content: center;
+            margin: auto;
+            padding-top: 4rem;
+            width: 80vw;
+          }
+          .main-description ul {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+          }
+          .main-description li {
+            margin-left: 3rem;
+            padding: 0.5rem 0;
+          }
+        `}
+      </style>
     </section>
   );
 };

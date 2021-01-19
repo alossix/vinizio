@@ -3,8 +3,9 @@ import Image from 'next/image';
 
 const TrentinoAltoAdigeSudtirol = () => {
   return (
-    <div id="taas" className="region-page">
+    <div className="region-page">
       <div className="region-title-icon">
+        <a class="anchor" id="taas"></a>
         <h2 className="region-title">
           Trentino-
           <br />
