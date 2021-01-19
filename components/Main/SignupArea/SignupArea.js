@@ -1,4 +1,4 @@
-import { signin, signout, useSession } from 'next-auth/client';
+import { signin, useSession } from 'next-auth/client';
 import React from 'react';
 
 const Signup = () => {
@@ -11,7 +11,9 @@ const Signup = () => {
         throughout the E.U.
       </h2>
       {session ? null : (
-        <button className="signup-area-button">Sign Up Now!</button>
+        <button onClick={signin} className="signup-area-button">
+          Sign Up Now!
+        </button>
       )}
       <section className="reorder-section">
         <h3>

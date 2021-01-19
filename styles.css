@@ -258,6 +258,7 @@ footer a:hover {
 }
 .highlight-title {
   margin: auto;
+  padding: 2rem 0;
 }
 .highlight-upcoming {
   display: flex;
