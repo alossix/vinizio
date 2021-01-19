@@ -10,6 +10,12 @@ const index = () => {
       {regionsArr.map((region, index) => (
         <div key={index}>{regionComponents[region]}</div>
       ))}
+      <style jsx>{`
+        .regions {
+          width: 90vw;
+          margin: auto;
+        }
+      `}</style>
     </div>
   );
 };

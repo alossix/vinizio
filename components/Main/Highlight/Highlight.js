@@ -11,6 +11,16 @@ const Highlight = () => {
         {HighlightComponents[upcoming[1]]}
         {HighlightComponents[upcoming[2]]}
       </div>
+      <style jsx>{`
+        .highlight-section {
+          margin-bottom: 3rem;
+        }
+        .highlight-upcoming {
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+        }
+      `}</style>
     </section>
   );
 };

@@ -3,8 +3,9 @@ import Image from 'next/image';
 
 const ValledAosta = () => {
   return (
-    <div id="valledaosta" className="region-page">
+    <div className="region-page">
       <div className="region-title-icon">
+        <a class="anchor" id="valledaosta"></a>
         <h2 className="region-title">Valle d'Aosta</h2>
         <Image
           src="/regions/valledaosta.png"

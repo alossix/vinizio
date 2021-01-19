@@ -16,6 +16,32 @@ const Hero = () => {
         </h2>
         <Arrow />
       </div>
+      <style jsx>
+        {`
+          .main-hero {
+            height: calc(100vh - 4rem);
+            background-image: linear-gradient(
+                rgba(0, 0, 0, 0.3),
+                rgba(0, 0, 0, 0.2)
+              ),
+              url('/vineyard.jpg');
+            background-size: cover;
+            background-position-y: 10%;
+            background-blend-mode: darken;
+            color: #fff;
+            width: 100vw;
+          }
+          .main-hero-text {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            height: 100%;
+            width: 80vw;
+            margin: auto;
+          }
+        `}
+      </style>
     </section>
   );
 };

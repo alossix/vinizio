@@ -39,6 +39,13 @@ button {
   font-family: 'Raleway', sans-serif;
   font-size: 1rem;
 }
+main {
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  min-height: calc(100vh - 8rem);
+}
 .app {
   width: 100vw;
   display: grid;
@@ -51,219 +58,15 @@ button {
   overflow: hidden;
   padding-top: 4rem;
 }
-.nav-top {
-  grid-area: nav;
-  height: 4rem;
-  width: 100vw;
-  border-bottom: 1px solid rgb(222, 222, 222);
-  background-color: #fff;
-  position: fixed;
-  top: 0;
+
+/* Highlight component-level styles */
+.highlight-card-title {
+  padding: 1rem;
 }
-.nav-top ul {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 0rem 1.5rem;
-  flex-wrap: wrap;
-  background-color: #fff;
-}
-.nav-top a {
-  color: #444444;
-  font-size: 0.8rem;
-  text-transform: uppercase;
-}
-.nav-top a:hover {
-  color: #6d0000;
-}
-.logo-group {
-  font-family: 'Patua One', cursive;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.logo-group a {
-  font-size: 2.8rem;
-  font-weight: 400;
-  text-transform: capitalize;
-  color: black;
-  padding: 0;
-}
-.logo-group a:hover {
-  text-decoration: none;
-  color: black;
-}
-.logo-group img {
-  height: 2.2rem;
-  margin: 0.8rem 0.2rem 0rem 0.2rem;
-}
-.signup-login {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.account-login-button {
-  padding: 0.5rem 2rem;
-  border-radius: 15px;
-  border: 3px solid #6d0000;
-  font-size: 0.8rem;
-  text-transform: uppercase;
-  background-color: white;
-  color: #6d0000;
-}
-.account-login-button:hover {
-  cursor: pointer;
-}
-.signup-logout-button {
-  padding: 0.5rem 2rem;
-  margin: 0rem 1rem 0rem 2rem;
-  background-color: #6d0000;
-  border-radius: 15px;
-  color: white;
-  border: 3px solid #6d0000;
-  font-size: 0.8rem;
-  text-transform: uppercase;
-}
-.signup-logout-button:hover {
-  cursor: pointer;
-  background-color: white;
-  color: #6d0000;
-}
-main {
-  grid-area: main;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  min-height: calc(100vh - 8rem);
-}
-.main-hero {
-  height: calc(100vh - 4rem);
-  background-image: linear-gradient(
-      rgba(0, 0, 0, 0.3),
-      rgba(0, 0, 0, 0.2)
-    ),
-    url('/vineyard.jpg');
-  background-size: cover;
-  background-position-y: 10%;
-  background-blend-mode: darken;
-  color: #fff;
-  width: 100vw;
-}
-.main-hero-text {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-  height: 100%;
-  width: 80vw;
-  margin: auto;
-}
-.main-description {
-  display: flex;
-  justify-content: center;
-  margin: auto;
-  padding-top: 4rem;
-  width: 80vw;
-}
-.main-description ul {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.main-description li {
-  margin-left: 3rem;
-  padding: 0.5rem 0;
-}
-.arrow-holder {
-  display: flex;
-  justify-content: center;
-  margin: auto;
-  width: 70px;
-  padding-top: 2rem;
-}
-.arrow-holder:hover {
-  cursor: pointer;
-}
-.arrow-image {
-  height: 13vh;
-  filter: invert(100);
-  z-index: 1;
-}
-.arrow-image:hover {
-  filter: invert(0.6);
-}
-.signup-area {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.signup-area h2 {
-  padding: 4rem 0;
-  max-width: 60vw;
-}
-.signup-area button {
-  padding: 1rem 4rem;
-  margin: 3rem 0;
-  border-radius: 15px;
-  background-color: #6d0000;
-  color: white;
-  border: 3px solid #6d0000;
-  font-size: 1.5rem;
-  text-transform: uppercase;
-}
-.signup-area button:hover {
-  cursor: pointer;
-  background-color: white;
-  color: #6d0000;
-}
-footer {
-  grid-area: footer;
-  background-color: #444444;
-  position: static;
-  bottom: 0;
-  width: 100vw;
-}
-footer ul {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 4rem;
-  padding: 0 1rem;
-}
-footer a {
-  font-size: 0.8rem;
-  color: white;
-  text-transform: uppercase;
-}
-footer a:hover {
-  color: #dddddd;
-}
-.regions {
-  width: 90vw;
-  margin: auto;
-}
-.region-page {
-  margin: 3rem 0;
-  display: flex;
-}
-.region-title-icon {
-  display: flex;
-  flex-direction: column;
-  min-width: 150px;
-  padding-right: 1rem;
-}
-.highlight-section {
-  margin-bottom: 3rem;
-}
-.highlight-title {
-  margin: auto;
-  padding: 2rem 0;
-}
-.highlight-upcoming {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+.highlight-card-container,
+.highlight-card-link {
+  font-size: 0.9rem;
+  padding: 0.5rem 0.5rem 1rem 1rem;
 }
 .highlight-card {
   max-width: 250px;
@@ -271,9 +74,6 @@ footer a:hover {
   border-radius: 15px;
   margin: 1rem;
   transition: transform 0.2s;
-}
-.highlight-card-title {
-  padding: 1rem;
 }
 .highlight-card:hover {
   transform: scale(1.1);
@@ -285,8 +85,25 @@ footer a:hover {
 .highlight-card h4 {
   padding-left: 1rem;
 }
-.highlight-card-container,
-.highlight-card-link {
-  font-size: 0.9rem;
-  padding: 0.5rem 0.5rem 1rem 1rem;
+.highlight-title {
+  margin: auto;
+  padding: 2rem 0;
+}
+
+/* Region page component-level styles */
+.region-page {
+  margin: 3rem 0;
+  display: flex;
+}
+a.anchor {
+  display: block;
+  position: relative;
+  top: -4rem;
+  background-color: lightcoral;
+}
+.region-title-icon {
+  display: flex;
+  flex-direction: column;
+  min-width: 150px;
+  padding-right: 1rem;
 }

@@ -3,8 +3,9 @@ import Image from 'next/image';
 
 const Puglia = () => {
   return (
-    <div id="puglia" className="region-page">
+    <div className="region-page">
       <div className="region-title-icon">
+        <a class="anchor" id="puglia"></a>
         <h2 className="region-title">Puglia</h2>
         <Image
           src="/regions/puglia.png"
