@@ -1,38 +1,42 @@
 import React, { useState, useEffect } from 'react';
-import { signin, useSession } from 'next-auth/client';
+import { useSession } from 'next-auth/client';
+import UserProfileLoading from '../../components/User/UserProfileLoading';
+import UserNotSignedIn from '../../components/User/UserNotSignedIn';
+import UserProfile from '../../components/User/UserProfile';
+import axios from 'axios';
 
 const index = () => {
   const [session, loading] = useSession();
+  const [email, setEmail] = useState('');
+  const [userData, setUserData] = useState();
 
   useEffect(() => {
-    const fetchData = async () => {
-      const res = await fetch('/api/user');
-      const json = await res.json();
+    const fetchSession = async () => {
+      try {
+        const res = await axios.get('/api/user');
+        setEmail(res.data.user);
+        try {
+          const res = await axios.post('/api/db', email);
+          setUserData(res.data.data);
+        } catch (err) {
+          console.log(`Error: ${err}`);
+        }
+      } catch (err) {
+        console.log(`Error: ${err}`);
+      }
     };
-    fetchData();
+    fetchSession();
   }, [session]);
 
   if (!session && loading) {
-    return (
-      <main className="user-profile-page">
-        <h2>Loading...</h2>
-      </main>
-    );
+    return <UserProfileLoading />;
   }
 
   if (!session) {
-    return (
-      <main className="user-profile-page">
-        <h2>You aren't signed in. Please sign in first.</h2>
-      </main>
-    );
+    return <UserNotSignedIn />;
   }
 
-  return (
-    <main className="user-profile-page">
-      <h2>User Profile Page</h2>
-    </main>
-  );
+  return <UserProfile userData={userData} />;
 };
 
 export default index;

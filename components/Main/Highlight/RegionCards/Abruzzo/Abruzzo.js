@@ -6,7 +6,7 @@ const Abruzzo = () => {
   return (
     <Link href="/regions#abruzzo">
       <div className="highlight-card">
-        <h4 className="highlight-card-title">Abruzzo</h4>
+        <h3 className="highlight-card-title">Abruzzo</h4>
         <div className="highlight-image">
           <Image
             src="/highlights/abruzzo.jpg"
