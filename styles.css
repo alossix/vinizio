@@ -40,6 +40,9 @@ button {
   font-family: 'Raleway', sans-serif;
   font-size: 1rem;
 }
+button:focus {
+  outline-style: none;
+}
 main {
   grid-area: main;
   display: flex;
