@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 const UserProfile = (props) => {
-  const { _id, email } = props.userData[0];
+  const { _id, email } = props.userData;
+
   return (
     <main className="user-profile-page">
       <h2>User Profile Page</h2>
