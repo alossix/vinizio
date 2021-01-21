@@ -17,7 +17,7 @@ const index = () => {
         setEmail(res.data.user);
         try {
           const res = await axios.post('/api/db', email);
-          setUserData(res.data.data);
+          setUserData(res.data.data[0]);
         } catch (err) {
           console.log(`Error: ${err}`);
         }
