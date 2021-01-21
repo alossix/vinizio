@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { useSession } from 'next-auth/client';
 import UserProfileLoading from '../../components/User/UserProfileLoading';
 import UserNotSignedIn from '../../components/User/UserNotSignedIn';
-import UserProfile from '../../components/User/UserProfile';
 import axios from 'axios';
 
 const index = () => {
@@ -14,9 +13,9 @@ const index = () => {
     const fetchSession = async () => {
       try {
         const res = await axios.get('/api/user');
-        setEmail(res.data.user);
+        setEmail(res.data.user.email);
         try {
-          const res = await axios.post('/api/db', email);
+          const res = await axios.post('/api/db', { email });
           setUserData(res.data.data[0]);
         } catch (err) {
           console.log(`Error: ${err}`);
@@ -30,13 +29,26 @@ const index = () => {
 
   if (!session && loading) {
     return <UserProfileLoading />;
-  }
-
-  if (!session) {
+  } else if (!session) {
     return <UserNotSignedIn />;
+  } else {
+    if (userData) {
+      return (
+        <main className="user-profile-page">
+          <h2>User Profile Page</h2>
+          <p>User ID: {userData._id}</p>
+          <p>User Email: {email}</p>
+        </main>
+      );
+    } else {
+      return (
+        <main className="user-profile-page">
+          <h2>User Profile Page</h2>
+          <p>Loading user profile</p>
+        </main>
+      );
+    }
   }
-
-  return <UserProfile userData={userData} />;
 };
 
 export default index;
