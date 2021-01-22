@@ -3,6 +3,7 @@ import User from '../../../models/User.model';
 
 const dbQueryHandler = async (req, res) => {
   const { email } = req.body;
+  console.log(JSON.stringify(req.body));
   await dbConnect();
   try {
     const user = await User.find({ email });
