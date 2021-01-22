@@ -3,7 +3,7 @@ import Link from 'next/link';
 import Head from 'next/head';
 
 const Nav = () => {
-  const [session, loading] = useSession();
+  const [session] = useSession();
 
   return (
     <div className="nav-area">
@@ -38,6 +38,21 @@ const Nav = () => {
           <Link href="/gifts">
             <a>Gift Boxes</a>
           </Link>
+          {session && (
+            <div className="signup-login">
+              <Link href="/user">
+                <button className="account-login-button">
+                  <a>My Account</a>
+                </button>
+              </Link>
+              <button
+                onClick={signout}
+                className="signup-logout-button"
+              >
+                Log Out
+              </button>
+            </div>
+          )}
           {!session && (
             <div className="signup-login">
               <button
@@ -51,21 +66,6 @@ const Nav = () => {
                 className="signup-logout-button"
               >
                 Sign Up
-              </button>
-            </div>
-          )}
-          {session && (
-            <div className="signup-login">
-              <Link href="/user">
-                <button className="account-login-button">
-                  <a>My Account</a>
-                </button>
-              </Link>
-              <button
-                onClick={signout}
-                className="signup-logout-button"
-              >
-                Log Out
               </button>
             </div>
           )}
