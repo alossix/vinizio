@@ -1,21 +1,27 @@
 import React from 'react';
 import { useSession } from 'next-auth/client';
+import UserDataForm from '../../components/User/UserDataForm';
 
 const index = () => {
   const [session, loading] = useSession();
 
   return (
     <main className="user-profile-page">
-      {loading && <h2>Loading...</h2>}
+      {!session && loading && <h2>Loading...</h2>}
+      {!session && !loading && (
+        <h2>You aren't signed in. Please sign in first.</h2>
+      )}
       {session && (
         <div>
           <h2>User Profile Page</h2>
-          <p>User Email: {session.user.email}</p>
+          <UserDataForm email={session.user.email} />
         </div>
       )}
-      {!session && (
-        <h2>You aren't signed in. Please sign in first.</h2>
-      )}
+      <style jsx>{`
+        .user-profile-page div {
+          height: 100%;
+        }
+      `}</style>
     </main>
   );
 };
