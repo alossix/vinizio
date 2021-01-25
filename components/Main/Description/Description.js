@@ -2,8 +2,8 @@ import React from 'react';
 
 const Description = () => {
   return (
-    <section id="main-description">
-      <div className="main-description">
+    <section id="description">
+      <div className="description">
         <h2>With your monthly subscription...</h2>
         <ul>
           <li>
@@ -31,19 +31,19 @@ const Description = () => {
       </div>
       <style jsx>
         {`
-          .main-description {
+          .description {
             display: flex;
             justify-content: center;
             margin: auto;
             padding-top: 4rem;
             width: 80vw;
           }
-          .main-description ul {
+          .description ul {
             display: flex;
             flex-direction: column;
             justify-content: center;
           }
-          .main-description li {
+          .description li {
             margin-left: 3rem;
             padding: 0.5rem 0;
           }
