@@ -5,6 +5,9 @@ const Arrow = () => {
   const [arrowVisible, setArrowVisible] = useState(false);
 
   const clickHandler = () => {
+    document.querySelector('#description').scrollIntoView({
+      behavior: 'smooth',
+    });
     setArrowVisible(true);
   };
 
@@ -12,7 +15,7 @@ const Arrow = () => {
     <div>
       {!arrowVisible ? (
         <div className="arrow-holder">
-          <Link href="/#main-description">
+          <Link href="/#description">
             <a>
               <img
                 className="arrow-image"
