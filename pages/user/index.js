@@ -1,6 +1,7 @@
 import React from 'react';
 import { useSession } from 'next-auth/client';
 import UserDataForm from '../../components/User/UserDataForm';
+import UserSubscription from '../../components/User/UserSubscription';
 
 const index = () => {
   const [session, loading] = useSession();
@@ -15,6 +16,7 @@ const index = () => {
         <div>
           <h2>User Profile Page</h2>
           <UserDataForm email={session.user.email} />
+          <UserSubscription />
         </div>
       )}
       <style jsx>{`
