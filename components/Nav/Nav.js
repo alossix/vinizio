@@ -97,6 +97,7 @@ const Nav = () => {
             align-items: center;
           }
           .logo-group img {
+            width: 2.2rem;
             height: 2.2rem;
             margin: 0.8rem 0.2rem 0rem 0.2rem;
           }

@@ -34,6 +34,7 @@ const Arrow = () => {
             justify-content: center;
             margin: auto;
             width: 70px;
+            height: 70px;
             padding-top: 2rem;
           }
           .arrow-holder:hover {
