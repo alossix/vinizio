@@ -2,7 +2,7 @@ import React from 'react';
 import { HighlightComponents } from './RegionCards/RegionCardsList';
 
 const Highlight = () => {
-  const upcoming = ['Piedmont', 'Puglia', 'Veneto'];
+  const upcoming = ['Puglia', 'Veneto', 'Piedmont'];
   return (
     <section className="highlight-section">
       <h2 className="highlight-title">Upcoming Deliveries</h2>
