@@ -6,9 +6,7 @@ const Piedmont = () => {
   return (
     <Link href="/regions#piedmont">
       <div className="highlight-card">
-        <h4 className="highlight-card-title">
-          February '21: Piedmont
-        </h4>
+        <h4 className="highlight-card-title">May '21: Piedmont</h4>
         <div className="highlight-image">
           <Image
             src="/highlights/piedmont.jpg"
@@ -18,7 +16,7 @@ const Piedmont = () => {
             objectFit={'cover'}
           />
           <div className="highlight-card-container">
-            <p>February highlights from the Piedmont region:</p>
+            <p>May highlights from the Piedmont region:</p>
             <ul>
               <li>Red: Barolo</li>
               <li>Red: Barbera</li>
