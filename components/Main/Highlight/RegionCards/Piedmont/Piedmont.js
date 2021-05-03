@@ -6,7 +6,7 @@ const Piedmont = () => {
   return (
     <Link href="/regions#piedmont">
       <div className="highlight-card">
-        <h4 className="highlight-card-title">May '21: Piedmont</h4>
+        <h4 className="highlight-card-title">August '21: Piedmont</h4>
         <div className="highlight-image">
           <Image
             src="/highlights/piedmont.jpg"
